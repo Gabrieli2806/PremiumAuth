@@ -1,0 +1,17 @@
+name: PremiumAuthPlugin
+version: 1.0
+main: com.g2806.PremiumAuth.PremiumAuthPlugin
+api-version: 1.21
+commands:
+  premium:
+    description: Sets a 4-digit PIN for your account.
+    usage: /<command> <4-digit-pin>
+    permission: premiumauth.use
+  pin:
+    description: Enters your PIN to verify your identity on login.
+    usage: /<command> <4-digit-pin>
+    permission: premiumauth.use
+permissions:
+  premiumauth.use:
+    description: Allows use of the /premium and /pin commands
+    default: true
